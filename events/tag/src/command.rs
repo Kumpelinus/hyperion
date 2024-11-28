@@ -3,7 +3,7 @@ use hyperion_clap::{MinecraftCommand, hyperion_command::CommandRegistry};
 
 use crate::command::{
     class::ClassCommand, dirt::DirtCommand, fly::FlyCommand, replace::ReplaceCommand,
-    speed::SpeedCommand, xp::XpCommand,
+    speed::SpeedCommand, tp::TpCommand, xp::XpCommand,
 };
 
 mod class;
@@ -11,6 +11,7 @@ mod dirt;
 mod fly;
 mod replace;
 mod speed;
+mod tp;
 mod xp;
 
 pub fn register(registry: &mut CommandRegistry, world: &World) {
@@ -20,4 +21,5 @@ pub fn register(registry: &mut CommandRegistry, world: &World) {
     XpCommand::register(registry, world);
     ReplaceCommand::register(registry, world);
     DirtCommand::register(registry, world);
+    TpCommand::register(registry, world);
 }
