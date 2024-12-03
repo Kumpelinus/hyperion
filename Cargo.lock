@@ -1917,6 +1917,14 @@ name = "hyperion-scheduled"
 version = "0.1.0"
 
 [[package]]
+name = "hyperion-skin"
+version = "0.1.0"
+dependencies = [
+ "flecs_ecs",
+ "hyperion",
+]
+
+[[package]]
 name = "hyperion-stats"
 version = "0.1.0"
 dependencies = [
@@ -3762,6 +3770,7 @@ dependencies = [
  "hyperion-permission",
  "hyperion-rank-tree",
  "hyperion-scheduled",
+ "hyperion-skin",
  "hyperion-text",
  "hyperion-utils",
  "rayon",

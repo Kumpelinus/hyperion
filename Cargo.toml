@@ -22,6 +22,7 @@ members = [
   'crates/hyperion-proto',
   'crates/hyperion-proxy',
   'crates/hyperion-scheduled',
+  'crates/hyperion-skin',
   'crates/hyperion-stats',
   'crates/hyperion-text',
   'crates/hyperion-utils',
@@ -170,6 +171,9 @@ path = 'crates/hyperion-rank-tree'
 
 [workspace.dependencies.hyperion-scheduled]
 path = 'crates/hyperion-scheduled'
+
+[workspace.dependencies.hyperion-skin]
+path = 'crates/hyperion-skin'
 
 [workspace.dependencies.hyperion-text]
 path = 'crates/hyperion-text'
